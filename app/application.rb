@@ -27,7 +27,7 @@ class Application
       add_term = req.params["item"]
       if @@items.include?(add_term)
         # binding.pry
-        @@items << add_term
+        @@cart << add_term
         resp.write "added #{add_term}"
         # binding.pry
       else
